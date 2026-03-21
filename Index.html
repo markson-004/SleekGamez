@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title> Gaming pad website </title>
+    <style>
+      body {
+        font-family:'Segoe UI',sans-serif;
+        background-color:#EDEDED;
+        padding:0;
+        margin:0;
+      }
+      
+      .hero {
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        overflow:hidden;
+      }
+       header {
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      border-bottom: 1px solid #333;
+    }
+       .logo {
+      height: 80px;
+      width: auto;
+      }
+      
+      .slider {
+        position:absolute;
+        width:100%;
+        height:100%;
+        display:flex;
+        animation:slide 8s infinite linear;
+        z-index:-2;
+      }
+      
+      .slider img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        flex-shrink:0;
+      }
+      
+      @keyframes slide {
+        0% { transform:translateX(0); }
+        20% { transform:translateX(0); }
+        25% { transform:translateX(-100%); }
+        45% { transform:translateX(-100%); }
+        50% { transform:translateX(-200%); }
+        70% { transform:translateX(-200%); }
+        75% { transform:translateX(-300%); }
+        95% { transform:translateX(-300%); }
+        100% { transform:translateX(0); }
+      }
+      
+      .hero::before {
+        content:"";
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+        z-index:-1;
+      }
+      
+      .hero h1 {
+        max-width:800px;
+        font-size:4rem;
+        color:white;
+        font-weight:700;
+        margin-bottom:0;
+        text-align:center;
+        z-index:1;
+      }
+      
+      .store-name {
+        color:#D92525;
+        font-size:4.2rem;
+        display:inline-block;
+      }
+      
+      .hero p {
+        color:white;
+        font-size:1.4rem;
+        font-weight:400;
+        z-index:1;
+        text-align:center;
+        max-width:600px;
+        margin:20px 0;
+      }
+      .btn {
+        padding:15px 35px;
+        border:none;
+        border-radius:25px;
+        background-color:#D92525;
+        color:white;
+        cursor:pointer;
+        transition: all ease 0.15s;
+        font-size:1rem;
+        font-weight:500;
+        z-index:1;
+        margin-top:20px;
+      }
+      .btn:hover {
+      background-color:white;
+      color:#D92525;
+      }
+      header {
+        background-color:black;
+        padding:1rem 4rem;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        border-bottom:1px solid #262626;
+      }
+      header h2 {
+        color:white;
+        font-size:1.3rem;
+      }
+      header .fadez {
+        color:#D92525;
+      }
+      nav ul {
+        display:flex;
+        align-items:flex-end;
+        gap:3rem;
+        list-style:none;
+      }
+      nav a {
+        color:white;
+        text-decoration:none;    
+      }
+      nav a:hover{
+        color:#D92525;
+      }
+      .about {
+        padding:4rem;
+        max-width:1200px;
+        margin:0 auto;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:3rem;
+        align-items:center;
+       height:60vh;
+      }
+      .about img {
+        width:100%;
+        border-radius:8px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      }
+      .about h2 {
+        font-size:2.5rem;
+        color:#333;
+        margin-bottom:1rem;
+      }
+      .about h2 span {
+        color:#D92525;
+      }
+      .about p {
+        color:#555;
+        line-height:1.6;
+        font-size:1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://i.postimg.cc/MGnfLPp6/Gaming-Controller-Logo-Design-Vektor-Illustration.jpg" alt=" gaming pad Website Logo" class="logo">
+    
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+      <button class="btn">Contact Us</button>
+    </header>
+    <div class="hero">
+      <div class="slider">
+        <img src="https://i.postimg.cc/B6vYRG1D/Gaming-Experience-Stock-Photo.jpg" alt="gaming pad website image 1">
+        <img src="https://i.postimg.cc/Y2YnV8vQ/A-gamer-is-playing-games.jpg" alt="gaming pad website image 2">
+        <img src="https://i.postimg.cc/N0QB9LWQ/The-Ultimate-Gaming-Room-Ideas-for-Boys-A-Visual-Journey-of-Unique-Setups-Remodr.jpg" alt="gaming pad website image 3">
+        <img src="https://i.postimg.cc/XqPY939C/a-man-of-african-appearance-in-headphones-with-a-gamepad-in-his-hands-plays-video-games-technology.jpg" alt="gaming pad website image 4">
+      </div>
+      <h1>SLEEK <span class="store-name">GAMEZ</span></h1>
+      <p>Play Beyond Limits!....</p>
+      <button class="btn">Pay Now</button>
+    </div>
+    
+    <section class="about" id="about">
+      <img src="https://i.postimg.cc/sfbcVWhY/hidan-via-insta.jpg" alt="Store interior">
+      <div>
+        <h2>About <span>Us</span></h2>
+        <p>At the core of our platform is powerful technology built to deliver seamless, high-performance gameplay. We combine advanced game engines, optimized servers, and real-time processing to ensure smooth graphics, minimal latency, and uninterrupted action. Every feature is engineered with precision to create a responsive and immersive gaming experience.</p>
+        <p>Our development team leverages cutting-edge tools, cloud infrastructure, and scalable architecture to support players worldwide. From AI-driven mechanics and dynamic environments to secure multiplayer systems, we continuously innovate to push the boundaries of what online gaming can achieve..</p>
+        <p>We are committed to constant improvement through updates, performance optimization, and data-driven enhancements. By blending creativity with technology, we build not just games—but intelligent, evolving digital ecosystems designed for the future of interactive entertainment..</p>
+      </div>
+    </section>
+  </body>
+</html>
